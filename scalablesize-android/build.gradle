@@ -1,0 +1,80 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.jfrog.bintray'
+apply plugin: 'com.github.dcendents.android-maven'
+
+android {
+
+  compileSdkVersion 29
+  buildToolsVersion "29.0.0"
+
+  defaultConfig {
+    minSdkVersion 16
+    targetSdkVersion 29
+    versionCode 1
+    versionName "1.0"
+
+    testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+  }
+
+  buildTypes {
+    release {
+      minifyEnabled false
+      proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+    }
+  }
+}
+
+dependencies {
+  implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+  implementation 'androidx.appcompat:appcompat:1.0.2'
+  testImplementation 'junit:junit:4.12'
+  androidTestImplementation 'androidx.test:runner:1.2.0'
+  androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+}
+
+ext {
+
+  bintrayRepo = "DynamicScalableSize"
+  bintrayName = "com.hardik.hsdp"
+
+  libraryName = 'scalablesize-android'
+
+  publishedGroupId = 'com.hardik.hsdp'
+  artifact = 'scalablesize-android'
+  libraryVersion = '1.0.0'
+
+  libraryDescription =
+      'An android SDK that provides a new size unit - hsdp. This size unit scales with the screen size. It can help Android developers with supporting multiple screens.'
+
+  siteUrl = 'https://github.com/Hardik8184/Dynamic-Scalable-Size'
+  gitUrl = 'https://github.com/Hardik8184/Dynamic-Scalable-Size.git'
+
+  developerId = 'hardikdungrani'
+  developerName = 'Hardik Dungrani'
+  developerEmail = 'hardikdungrani8@gmail.com'
+
+  licenseName = 'The Apache Software License, Version 2.0'
+  licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+  allLicenses = ["Apache-2.0"]
+}
+
+//Add these lines to publish library to bintray. This is the readymade scripts made by github user nuuneoi to make uploading to bintray easy.
+//Place it at the end of the file
+if (project.rootProject.file('local.properties').exists()) {
+  apply from: 'https://raw.githubusercontent.com/Hardik8184/JCenter-Gradle-Scripts/master/install.gradle'
+  apply from: 'https://raw.githubusercontent.com/Hardik8184/JCenter-Gradle-Scripts/master/bintray.gradle'
+}
+
+repositories {
+  mavenCentral()
+}
+
+//# Example
+//[Here](https://github.com/Hardik8184/Dynamic-Scalable-Size/blob/master/scalablesize-android/src/main/res/layout/hsdp_layout.xml) is a single layout built using sdp:
+//
+//    ![sdp example](https://github.com/intuit/sdp/blob/master/sdp_example.png)
+//
+//        And [here](https://github.com/intuit/sdp/blob/master/sdp-android/src/main/res/layout/dp_example.xml) is the same layout built using dp:
+//
+//            ![dp example](https://github.com/intuit/sdp/blob/master/dp_example.png)

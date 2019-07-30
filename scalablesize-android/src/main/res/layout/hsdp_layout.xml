@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+  <LinearLayout
+      android:id="@+id/give_us_a_review_landmine_main_layout"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:orientation="vertical"
+      android:paddingBottom="@dimen/_27hsdp"
+      android:paddingLeft="@dimen/_43hsdp"
+      android:paddingRight="@dimen/_43hsdp"
+      android:paddingTop="@dimen/_50hsdp"
+      >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Hardik Dungrani"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_40font_ssp"
+        />
+
+    <TextView
+        android:id="@+id/give_us_a_review_landmine_text_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_25hsdp"
+        android:gravity="center"
+        android:paddingBottom="@dimen/_12hsdp"
+        android:text="Rate us so we can grow and help more people get their finances in check"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_16font_ssp"
+        />
+
+    <TextView
+        android:id="@+id/give_us_a_review_landmine_text_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="★★★★★"
+        android:textColor="#747474"
+        android:textSize="@dimen/_22font_ssp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/give_us_a_review_landmine_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_25hsdp"
+        android:background="@android:color/holo_red_dark"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:minWidth="120dp"
+        android:padding="@dimen/_8hsdp"
+        android:singleLine="true"
+        android:text="Rate"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_15font_ssp"
+        android:visibility="visible"
+        />
+
+  </LinearLayout>
+
+</LinearLayout>
