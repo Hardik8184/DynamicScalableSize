@@ -37,7 +37,7 @@ Add this in your app's build.gradle file(Using Android Studio and Gradle):
 **Basic Example**
 
 How to use this hsdp size unit, please see this link :
- [hsdp_layout.xml](https://github.com/Hardik8184/Dynamic-Scalable-Size/blob/master/scalablesize-android/src/main/res/layout/hsdp_layout.xml)
+ [hsdp_layout.xml](https://github.com/Hardik8184/DynamicScalableSize/blob/master/scalablesize-android/src/main/res/layout/hsdp_layout.xml)
 
 # 📃 License
 
