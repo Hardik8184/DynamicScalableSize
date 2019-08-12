@@ -5,7 +5,7 @@ apply plugin: 'com.github.dcendents.android-maven'
 android {
 
   compileSdkVersion 29
-  buildToolsVersion "29.0.0"
+  buildToolsVersion "29.0.2"
 
   defaultConfig {
     minSdkVersion 16
@@ -35,7 +35,7 @@ dependencies {
 
 ext {
 
-  bintrayRepo = "DynamicScalableSize"
+  bintrayRepo = "DynamicSize"
   bintrayName = "com.hardik.hsdp"
 
   libraryName = 'scalablesize-android'
@@ -47,8 +47,8 @@ ext {
   libraryDescription =
       'An android SDK that provides a new size unit - hsdp. This size unit scales with the screen size. It can help Android developers with supporting multiple screens.'
 
-  siteUrl = 'https://github.com/Hardik8184/Dynamic-Scalable-Size'
-  gitUrl = 'https://github.com/Hardik8184/Dynamic-Scalable-Size.git'
+  siteUrl = 'https://github.com/Hardik8184/DynamicScalableSize'
+  gitUrl = 'https://github.com/Hardik8184/DynamicScalableSize.git'
 
   developerId = 'hardikdungrani'
   developerName = 'Hardik Dungrani'
@@ -59,7 +59,7 @@ ext {
   allLicenses = ["Apache-2.0"]
 }
 
-//Add these lines to publish library to bintray. This is the readymade scripts made by github user nuuneoi to make uploading to bintray easy.
+//Add these lines to publish library to bintray. This is the readymade scripts made by github user to make uploading to bintray easy.
 //Place it at the end of the file
 if (project.rootProject.file('local.properties').exists()) {
   apply from: 'https://raw.githubusercontent.com/Hardik8184/JCenter-Gradle-Scripts/master/install.gradle'
@@ -69,12 +69,3 @@ if (project.rootProject.file('local.properties').exists()) {
 repositories {
   mavenCentral()
 }
-
-//# Example
-//[Here](https://github.com/Hardik8184/Dynamic-Scalable-Size/blob/master/scalablesize-android/src/main/res/layout/hsdp_layout.xml) is a single layout built using sdp:
-//
-//    ![sdp example](https://github.com/intuit/sdp/blob/master/sdp_example.png)
-//
-//        And [here](https://github.com/intuit/sdp/blob/master/sdp-android/src/main/res/layout/dp_example.xml) is the same layout built using dp:
-//
-//            ![dp example](https://github.com/intuit/sdp/blob/master/dp_example.png)
