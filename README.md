@@ -19,7 +19,7 @@ Add this in your app's build.gradle file(Using Android Studio and Gradle):
   
   ```
   dependencies {
-    implementation 'com.hardik.hsdp:scalablesize-android:1.0.0'
+    implementation 'com.hardik.hsdp:scalablesize-android:1.0.1'
   }
   ```
 

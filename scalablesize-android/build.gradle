@@ -27,7 +27,7 @@ android {
 dependencies {
   implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-  implementation 'androidx.appcompat:appcompat:1.0.2'
+  implementation 'androidx.appcompat:appcompat:1.1.0'
   testImplementation 'junit:junit:4.12'
   androidTestImplementation 'androidx.test:runner:1.2.0'
   androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
@@ -42,10 +42,11 @@ ext {
 
   publishedGroupId = 'com.hardik.hsdp'
   artifact = 'scalablesize-android'
-  libraryVersion = '1.0.0'
+  libraryVersion = '1.0.1'
 
   libraryDescription =
-      'An android SDK that provides a new size unit - hsdp. This size unit scales with the screen size. It can help Android developers with supporting multiple screens.'
+      'An android SDK that provides a new size unit - hsdp. This size unit scales with the screen size.' +
+          'It can help Android developers with supporting multiple screens.'
 
   siteUrl = 'https://github.com/Hardik8184/DynamicScalableSize'
   gitUrl = 'https://github.com/Hardik8184/DynamicScalableSize.git'
